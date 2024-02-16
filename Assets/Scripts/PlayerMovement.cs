@@ -54,9 +54,11 @@ public class PlayerMovement : MonoBehaviour
             transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
         }
 
-        if(isPowerUpActive) {
+        if (isPowerUpActive)
+        {
             powerUpTimer -= Time.deltaTime;
-            if(powerUpTimer <= 0) {
+            if (powerUpTimer <= 0)
+            {
                 DeactivatePowerUp();
             }
         }
@@ -86,23 +88,24 @@ public class PlayerMovement : MonoBehaviour
         if (score >= 370)
         {
             ActivateVictoryCanvas();
-            StartCoroutine(GameOverAfterDelay(3f));        
+            StartCoroutine(GameOverAfterDelay(3f));
         }
 
-        if(collision.CompareTag("cherry")) {
+        if (collision.CompareTag("cherry"))
+        {
             collision.gameObject.SetActive(false);
             ActivatePowerUp();
             cherry++;
         }
     }
 
-     IEnumerator GameOverAfterDelay(float delay)
+    IEnumerator GameOverAfterDelay(float delay)
     {
         yield return new WaitForSeconds(delay);
         GameOver();
     }
 
-     void ActivateVictoryCanvas()
+    void ActivateVictoryCanvas()
     {
         if (victoryCanvas != null)
         {
@@ -114,44 +117,54 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-     private void DestroyObjectWithTag() {
+    private void DestroyObjectWithTag()
+    {
         GameObject targetObject1 = GameObject.FindWithTag("cherryCanvas");
         GameObject targetObject2 = GameObject.FindWithTag("cherryCanvas1");
         GameObject targetObject3 = GameObject.FindWithTag("cherryCanvas2");
 
-        if (cherry == 1){
+        if (cherry == 1)
+        {
             Destroy(targetObject1);
-        } else if(cherry == 2) {
+        }
+        else if (cherry == 2)
+        {
             Destroy(targetObject2);
-        } else if(cherry == 3) {
+        }
+        else if (cherry == 3)
+        {
             Destroy(targetObject3);
         }
     }
 
-     void OnCollisionEnter2D (Collision2D collision) {
-        if(isPowerUpActive && collision.gameObject.CompareTag("enemies")) {
-            collision.transform.position = Vector2.zero;        
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (isPowerUpActive && collision.gameObject.CompareTag("enemies"))
+        {
+            collision.transform.position = Vector2.zero;
             collision.gameObject.SetActive(false);
-            StartCoroutine(ReactivateAfterDelay(collision.gameObject, 2f));
+            StartCoroutine(ReactivateAfterDelay(collision.gameObject, 5f));
         }
     }
 
     IEnumerator ReactivateAfterDelay(GameObject obj, float delay)
-        {
-            // Wait for the specified delay
-            yield return new WaitForSeconds(delay);
+    {
+        // Wait for the specified delay
+        yield return new WaitForSeconds(delay);
 
-            // Activate the game object
-            obj.SetActive(true);
-        }
-
-    private void ActivatePowerUp () {
-        isPowerUpActive = true;
-        powerUpTimer = powerUpDuration;
-        
+        // Activate the game object
+        obj.SetActive(true);
     }
 
-    private void DeactivatePowerUp() {
+    private void ActivatePowerUp()
+    {
+        isPowerUpActive = true;
+        powerUpTimer = powerUpDuration;
+
+    }
+
+    private void DeactivatePowerUp()
+    {
         isPowerUpActive = false;
     }
 

@@ -885,10 +885,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 5
-  radius: 2.84
+  radius: 1.99
   height: 2
   canMove: 1
-  maxSpeed: 1.5
+  maxSpeed: 1
   gravity: {x: NaN, y: NaN, z: NaN}
   groundMask:
     serializedVersion: 2
@@ -1060,8 +1060,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!60 &143013231
-PolygonCollider2D:
+--- !u!58 &143013231
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1075,7 +1075,7 @@ PolygonCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 0
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -1092,29 +1092,9 @@ PolygonCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 6, y: 6}
-    newSize: {x: 6, y: 6}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 1.9399999, y: 0.76}
-      - {x: 1.92, y: 0.78}
-      - {x: 1.55, y: 1.3399999}
-      - {x: 0.91999996, y: 1.62}
-      - {x: -1.24, y: 1.62}
-      - {x: -1.26, y: 1.5999999}
-      - {x: -2, y: 1.31}
-      - {x: -2.3799999, y: 0.83}
-      - {x: -2.3799999, y: -2.46}
-      - {x: 1.9399999, y: -2.46}
-  m_UseDelaunayMesh: 0
+  m_Offset: {x: -0.16558528, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.64
 --- !u!1 &201523139
 GameObject:
   m_ObjectHideFlags: 0
@@ -1774,10 +1754,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 5
-  radius: 2.84
+  radius: 1.99
   height: 2
   canMove: 1
-  maxSpeed: 1.5
+  maxSpeed: 1
   gravity: {x: NaN, y: NaN, z: NaN}
   groundMask:
     serializedVersion: 2
@@ -1872,8 +1852,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 1
   target: {fileID: 1211636633}
---- !u!60 &391639699
-PolygonCollider2D:
+--- !u!58 &391639699
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1887,7 +1867,7 @@ PolygonCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 0
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -1905,28 +1885,8 @@ PolygonCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 6, y: 6}
-    newSize: {x: 6, y: 6}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 1.9399999, y: 0.76}
-      - {x: 1.92, y: 0.78}
-      - {x: 1.55, y: 1.3399999}
-      - {x: 0.91999996, y: 1.62}
-      - {x: -1.24, y: 1.62}
-      - {x: -1.26, y: 1.5999999}
-      - {x: -2, y: 1.31}
-      - {x: -2.3799999, y: 0.83}
-      - {x: -2.3799999, y: -2.46}
-      - {x: 1.9399999, y: -2.46}
-  m_UseDelaunayMesh: 0
+  serializedVersion: 2
+  m_Radius: 1.64
 --- !u!1 &426661911
 GameObject:
   m_ObjectHideFlags: 0
@@ -2778,7 +2738,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 1
   data:
-    dataString: UEsDBBQAAAgIAAAQIexFN4/FeAIAADMFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFlVE1z2jAQ/SuMzoWxMSWmt9YQ0kMSJqSTiy/CWmMNsuSR5PCR4b93JdvYpSeWt/t2337IX4RLU0FmlV5rzp4VA/JjRJxNvo165xOc6F7JLb9AF/PBmS1cEPUxb9RyhXjoaEaVYDXPfsq9cMEBgrXkudLliu0hUcYahHMqDKBLK+vYEqGvETnhz3jhKGe0pg/OuqC1CEZXNDOQFnQfGkyCcLZYLKJp8NByOkZDqGUmaFkBc+p7XjSbRNOWEMaTxdwHS+yujcPEsaunhOCmVUfsufLdJ7QyNfaGAYxT7NZLCicRAgXwfWGd9iH9Nc8N2Fadpucl1zi2Ji/5pZpZltQcGomfVNSuUuxlNSmf//OOQ+/OtSqfuqph4CrYgmeHN3rOqLGDUQ/h5UC4n9ORigPdCfgoQL6otVa1ZOi0unbU2sB02f+9NZYUkB16vJF6B9bVYGHdZidRPAvjeTRfjf3qLm1DVz+IUyJ4ufN7mDXAVig/fH8boHFTv1G9vxzT5kXUSfpj4J3uhyfWOh65NhZdbcvSad2pWrtQsvIDdK3VNlFagofbDiqQVNjzBtPY+23e+QZl7zyP1D2mtnjr697IHcXDfXwQ3Lk26njbnCnU8RlM8VpbwSX0op3jBeeUKCmbYxvOpKNta53TbEDb15z9e2ckziLU8D2O6HwHM5aNczpHIAtmLJ9GQZQTf4hcYp9UbBqh7Xhwa7JPLvHoum/MaK1p5Q+faXpc80upBiPnMlfbTAPI1ybDTThoLIKvlK0YxwFtwVou/b7JV0qEyg7A0lui1He6OllN0z5LSir+qaxDUpL4j0pKHHw77I2GTw5HV7xLdiXXv1BLAwQUAAAICAAAECHsAiAv6GwAAAB4AAAACQAkAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAatWKkstKs7Mz1OyUjDRM9IzNNdRUEovSizIKAaKGII4pZkpIHa0kkWysaGBgamFcaJZUqpJSrJuWqIZUCDZwCQlzcjYwDhNKRaovqSyINUvMTcVoicgsSQjLTMvJTMvXc+9KDPFHWS0UmwtAFBLAQItABQAAAgIAAAQIexFN4/FeAIAADMFAAALACQAAAAAAAAAAAAAAAAAAABncmFwaDAuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLAQItABQAAAgIAAAQIewCIC/obAAAAHgAAAAJACQAAAAAAAAAAAAAAMUCAABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwUGAAAAAAIAAgC4AAAAfAMAAAAA
+    dataString: UEsDBBQAAAgIAAAQIex+1rrjawIAACYFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFlVE1z2jAQ/SuMziVjcD5Ib61DSA9JmNBOLr4IaY01yJJHHwGS4b93JdvYdU+I9/btvl2t/EWEsjUwp83KCP6sOZDvExLO5NukJ5/gSHdabcQndDHvgrsyBNEY80ad0IjPgszqCpwR7IfayRCcIOiVKLSplnwHmbbOIlxQaQEpo11QK4S+JuSIP9P7IDnhaX4XTp94uk8mZzwyUA5MH5pcJbObJEnS+XzRajpFI/CKSVrVwIP7XpeiMG0Fs9urm/sYrLC7Ng75u1BPSyls6464Ux27z2htPfaGAVxQ7DZaml2FjCWIXemC96H8tSgsuNadoacHYXBsTV7yUzezrKjdNxY/qPSh0iLaalI+/8dOZ5EujK6euqqzJFRwpWD7N3pi1LrBqIfww8B4nNOByj3dSngvQb3oldFecSSd8UHqLcwf+r+XxrIS2L7HG6sj0NeDCxvdUujhHHs/ZlJU2zj66wbYSB3nHdcBDF7OLzQcl8W2KRANLv5Y+E13w61qiUdhrEOq7VIFe1vtTQglyziz0I13mTYKItyarkFR6U5rTOPGFzjiBmVHzCMN76ct3nLdsxhJItzHJ8mIWuvD5bJsqQ/PYMtX76RQ0JsOxAvOKdNKNfs1nEkn23hTUDaQ7bzg/64WWbAUPdwsUnq7hWvOpgW9RYAl17yYp0lakLh7QmGfVK4bo+148NZUn1zhnnWflcnK0DruOjf0sBKflR6MXKhCb5gBUK9NhotxMFgEHyZfcoED2oBzQsX7Jl85kZrtgeeXRHnsdHl0huZ9lpzU4kO7gOQki9+RnAT4sstrAx8CDqF4l+xMzn8BUEsDBBQAAAgIAAAQIewCIC/obAAAAHgAAAAJACQAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0Bq1YqSy0qzszPU7JSMNEz0jM011FQSi9KLMgoBooYgjilmSkgdrSSRbKxoYGBqYVxollSqklKsm5aohlQINnAJCXNyNjAOE0pFqi+pLIg1S8xNxWiJyCxJCMtMy8lMy9dz70oM8UdZLRSbC0AUEsBAi0AFAAACAgAABAh7H7WuuNrAgAAJgUAAAsAJAAAAAAAAAAAAAAAAAAAAGdyYXBoMC5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsBAi0AFAAACAgAABAh7AIgL+hsAAAAeAAAAAkAJAAAAAAAAAAAAAAAuAIAAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLBQYAAAAAAgACALgAAABvAwAAAAA=
     upgradeData: 
     file_cachedStartup: {fileID: 0}
     data_cachedStartup: 
@@ -3697,10 +3657,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 5
-  radius: 2.84
+  radius: 1.99
   height: 2
   canMove: 1
-  maxSpeed: 1.5
+  maxSpeed: 1
   gravity: {x: NaN, y: NaN, z: NaN}
   groundMask:
     serializedVersion: 2
@@ -3872,8 +3832,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!60 &889847328
-PolygonCollider2D:
+--- !u!58 &889847328
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -3887,7 +3847,7 @@ PolygonCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 0
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -3904,31 +3864,9 @@ PolygonCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 6, y: 6}
-    newSize: {x: 6, y: 6}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 1.9399999, y: 1.03}
-      - {x: 1.1999999, y: 1.62}
-      - {x: -1.24, y: 1.62}
-      - {x: -1.26, y: 1.5999999}
-      - {x: -2, y: 1.31}
-      - {x: -2.3799999, y: 0.78}
-      - {x: -2.3799999, y: -2.02}
-      - {x: -2.36, y: -2.04}
-      - {x: -2.12, y: -2.44}
-      - {x: -2.1, y: -2.46}
-      - {x: 1.7199999, y: -2.46}
-      - {x: 1.9399999, y: -2.02}
-  m_UseDelaunayMesh: 0
+  m_Offset: {x: -0.0000019073486, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.64
 --- !u!1 &926322768
 GameObject:
   m_ObjectHideFlags: 0
@@ -10011,10 +9949,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 5
-  radius: 2.84
+  radius: 1.99
   height: 2
   canMove: 1
-  maxSpeed: 1.5
+  maxSpeed: 1
   gravity: {x: NaN, y: NaN, z: NaN}
   groundMask:
     serializedVersion: 2
@@ -10186,8 +10124,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!60 &2077109452
-PolygonCollider2D:
+--- !u!58 &2077109452
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -10201,7 +10139,7 @@ PolygonCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 0
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -10219,30 +10157,8 @@ PolygonCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 6, y: 6}
-    newSize: {x: 6, y: 6}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 1.9399999, y: 1.03}
-      - {x: 1.1999999, y: 1.62}
-      - {x: -1.24, y: 1.62}
-      - {x: -1.26, y: 1.5999999}
-      - {x: -2, y: 1.31}
-      - {x: -2.3799999, y: 0.78}
-      - {x: -2.3799999, y: -2.02}
-      - {x: -2.36, y: -2.04}
-      - {x: -2.12, y: -2.44}
-      - {x: -2.1, y: -2.46}
-      - {x: 1.7199999, y: -2.46}
-      - {x: 1.9399999, y: -2.02}
-  m_UseDelaunayMesh: 0
+  serializedVersion: 2
+  m_Radius: 1.64
 --- !u!1 &2096328421
 GameObject:
   m_ObjectHideFlags: 0
